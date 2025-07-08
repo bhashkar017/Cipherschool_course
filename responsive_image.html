@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Responsive Image Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #f0f0f0;
+    }
+
+    .image-container {
+      max-width: 600px;
+      margin: auto;
+    }
+
+    img.responsive-img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      display: block;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 10px;
+      }
+
+      .image-container {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Responsive Image Demo</h1>
+
+  <div class="image-container">
+    <img
+      src="https://via.placeholder.com/800x400"
+      alt="Example placeholder image"
+      class="responsive-img"
+    />
+  </div>
+
+</body>
+</html>
