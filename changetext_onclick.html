@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Change Message</title>
+</head>
+<body>
+
+  <h1 id="message">Hello, this is the original message.</h1>
+
+  <button onclick="changeMessage()">Click to Change Message</button>
+
+  <script>
+    function changeMessage() {
+      document.getElementById("message").innerText = "The message has been changed!";
+    }
+  </script>
+
+</body>
+</html>
