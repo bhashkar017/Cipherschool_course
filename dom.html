@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>DOM Navigation Example</title>
+</head>
+<body>
+
+  <div id="container">
+    <h1>Heading</h1>
+    <p>First paragraph</p>
+    <p>Second paragraph</p>
+  </div>
+
+  <script>
+    const container = document.getElementById("container");
+
+    // Using childNodes
+    console.log("Child Nodes of #container:");
+    console.log(container.childNodes); // Includes text nodes (whitespace)
+
+    // Using parentNode
+    console.log("Parent of #container:");
+    console.log(container.parentNode); // Should be <body>
+
+    // Using nextSibling
+    const firstPara = container.childNodes[3]; // Second actual element (after <h1>)
+    console.log("Next sibling of first paragraph:");
+    console.log(firstPara.nextSibling); // May log a text node (whitespace) or next <p>
+
+    // Use nextElementSibling to skip whitespace
+    console.log("Next element sibling of first paragraph:");
+    console.log(firstPara.nextElementSibling); // Logs the second <p>
+  </script>
+
+</body>
+</html>
