@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JavaScript Class Example</title>
+</head>
+<body>
+
+  <h1>Check the Console for Output</h1>
+
+  <script>
+    // JavaScript class with constructor and sayHello() method
+    class Person {
+      constructor(name) {
+        this.name = name;
+      }
+
+      sayHello() {
+        console.log(`Hello, my name is ${this.name}`);
+      }
+    }
+
+    // Create an instance and call the method
+    const person1 = new Person("Alice");
+    person1.sayHello(); // Output: Hello, my name is Alice
+  </script>
+
+</body>
+</html>
